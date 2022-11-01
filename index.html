@@ -11,18 +11,37 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+
+
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="carousel.css" rel="stylesheet">
+
 </head>
+<style>
+    .carousel-item{
+        height: 600px;
+    }
+   
+    #cor{
+        color: rgb(8, 0, 0);
+    }
+      #cora{
+        color: white;
+      }#cora:hover{
+        color: gray;
+      }
+      #cori{
+        color: aliceblue;
+      }
+    
+</style>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+  
+ 
+  
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -31,6 +50,182 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
-</body>
+
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img src="./assets/css/img/unnamed.png" width="50px">ForLife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a id="cora" class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a id="cora" class="nav-link" href="#">Consultas</a>
+            </li>
+            <li class="nav-item">
+              <a id="cora" class="nav-link" href="#">Agendamento</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="./assets/css/img/Familia.JPG" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 id="cor">Planos de Saúde</h1>
+                <p id="cor">Cuide de você e de sua família com os melhores planos do Rio de Janeiro.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Conferir</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="./assets/css/img/Equipe.JPG" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 id="cori">Médicos Especializados</h1>
+                <p id="cori">Tenha consultas com os melhores médicos do país, segundo o Ministério da Saúde.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Conferir</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="./assets/css/img/Novembro-azul.JPG" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1></h1>
+                <p id="cor"></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Participar</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Avançar</span>
+        </a>
+      </div>
+
+
+      <!-- Mensagens de marketing e outras featurezinhas
+      ================================================== -->
+      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+      <div class="container marketing">
+
+        <!-- Três colunas de texto, abaixo do carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/css/img/sau.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Médicos</h2>
+            <p>A melhor equipe responsável pela sua saúde. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/css/img/saud.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Agendamento</h2>
+            <p>Dias e horários das consultas.</p>
+            <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./assets/css/img/Coração.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Medicamentos</h2>
+            <p>Temos convênios com as fármacias da região, procure seu remédio aqui.</p>
+            <p><a class="btn btn-primary" href="#" role="button">Detalhes &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Novembro Azul. <span class="text-muted">Participe dessa campanha!</span></h2>
+            <p class="lead">Prevenção nunca é demais, cuide de você para que alguém não tenha que cuidar da sua familia por você .</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="./assets/css/img/Novembro-azul.JPG" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">A vida através de seus olhos. <span class="text-muted">Consultas com Oftalmologista.</span></h2>
+            <p class="lead">Faça seus exames conosco e dê vida nova aos seus olhos.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="./assets/css/img/oft.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Previna-se. <span class="text-muted">Doenças causadas por Vasco da Gama</span></h2>
+            <p class="lead">Venha se tratar caso você sofra por esse time.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="./assets/css/img/vasco_saf.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /FIM DAS FEATUREZINHAS *-* -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; ForLife S.A., 2017-2018 &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
 
 </html>
